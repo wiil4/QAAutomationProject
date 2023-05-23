@@ -21,7 +21,7 @@ This a project for testing some functionalities on [yopmail](https://yopmail.com
 ## TotoistTest
 - It has it's own files inside folder page/Todoist and test/Todoist
 - For testing is necessary to make sure **todoist** TestMethod is uncommented as **yopmail** TestMethod is uncommented
-- It is also necessary to uncomment the driver navigator which is located in *CRUDTest.cs* as explained below:
+- It is also necessary to uncomment the driver navigator which is located in *test/Todoist/CRUDTest.cs* as explained below:
 
 ```csharp
 [TestInitialize]
@@ -32,7 +32,7 @@ This a project for testing some functionalities on [yopmail](https://yopmail.com
     }
 ```
 
-- In addition, tester should provide a correct **User email** and **Password** (that has been Signed Up in Todoist) in the file explained below:
+- In addition, tester should provide a correct **User email** and **Password** (that has been Signed Up in Todoist) in the file (**test/Todoist/CRUDTest.cs**) explained below:
 
 ```csharp
 public class CRUDTest : BaseTest
