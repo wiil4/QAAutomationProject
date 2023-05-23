@@ -2,7 +2,6 @@
 *.suo
 *.obj
 *.dll
-*.exe
 *.pdb
 *.user
 *.aps
@@ -22,9 +21,6 @@
 *.a
 *.dll
 
-# Executables
-*.exe
-
 # Visual Studio files
 .vs/
 /.vscode/
@@ -35,7 +31,3 @@
 x64/
 build/
 [Bb]in/
-
-# NuGet packages
-*.nuget.props
-*.nuget.targets
