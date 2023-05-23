@@ -41,7 +41,7 @@ public class CRUDTest : BaseTest
         LogInPage logInPage = new LogInPage();
         ProjectsSection projectsSection = new ProjectsSection();
 
-        private readonly string email = "willcorreos@gmail.com";
-        private readonly string password = "todoisttest";
+        private readonly string email = "";
+        private readonly string password = "";
     ...
 ```
