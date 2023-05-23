@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,13 @@ namespace YopmailAndTodoist.src.code.control
         {
             FindControl();
             return control.Enabled;
+        }
+
+        public void RightClick()
+        {
+            FindControl();
+            Actions rightClick = new Actions(session.Session.Instance().GetBrowser());
+            rightClick.ContextClick(control).Perform();
         }
     }
 }

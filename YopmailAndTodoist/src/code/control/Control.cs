@@ -22,6 +22,7 @@ namespace YopmailAndTodoist.src.code.control
         {
             control = Session.Instance().GetBrowser().FindElement(locator);
         }
+        
         public void Click()
         {
             FindControl();
@@ -39,6 +40,12 @@ namespace YopmailAndTodoist.src.code.control
             {
                 return false;
             }
+        }
+
+        public string GetAttribute(string attibute)
+        {
+            FindControl();
+            return control.GetAttribute(attibute);
         }
     }
 }

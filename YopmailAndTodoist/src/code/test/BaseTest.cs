@@ -13,8 +13,8 @@ namespace YopmailAndTodoist.src.code.test
         [TestInitialize]
         public void OpenBrowser()
         {
-            Session.Instance().GetBrowser().Navigate().GoToUrl("https://yopmail.com/");
-            //Session.instance.GetBrowser().Navigate().GoToUrl("https://todoist.com/");
+            //Session.Instance().GetBrowser().Navigate().GoToUrl("https://yopmail.com/");
+            Session.Instance().GetBrowser().Navigate().GoToUrl("https://todoist.com/");
         }
 
         [TestCleanup]

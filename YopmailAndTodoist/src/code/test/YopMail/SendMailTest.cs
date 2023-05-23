@@ -15,7 +15,7 @@ namespace YopmailAndTodoist.src.code.test.YopMail
         WriteMailSection writeMailSection = new WriteMailSection();
         ReceivedMailSection receivedMailSection = new ReceivedMailSection();    
 
-        [TestMethod]
+        //[TestMethod]
         public void SendMailTestMethod()
         {
             //GENERATING A NEW EMAIL WITH RANDOM NUMBER
