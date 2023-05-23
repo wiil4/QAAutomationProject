@@ -13,7 +13,7 @@ namespace YopmailAndTodoist.src.code.factoryBrowser
         public IWebDriver Create()
         {
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            IWebDriver driver = new ChromeDriver($"{path}/driver/chromedriver.exe");
+            IWebDriver driver = new ChromeDriver($"{path}/src/resources/chromedriver.exe");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
             driver.Manage().Window.Maximize();
             return driver;
